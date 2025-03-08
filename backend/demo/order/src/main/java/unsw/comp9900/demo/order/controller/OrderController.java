@@ -15,7 +15,8 @@ public class OrderController {
     @RequestMapping("/add")
     public String add(){
         System.out.println("added");
-        String msg = restTemplate.getForObject("http://localhost:8011/stock/reduce", String.class);
-        return "added" + msg;
+        String msg = restTemplate.getForObject("http://stock-service/stock/reduce", String.class);
+        String msg2 = restTemplate.getForObject("http://python/stops", String.class);
+        return "added " + msg +" "+msg2;
     }
 }

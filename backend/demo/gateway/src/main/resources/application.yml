@@ -2,3 +2,13 @@ spring:
   profiles:
     active: dev
     # switch to prod when packaging to docker
+
+# on nacos
+#spring:
+#  cloud:
+#    gateway:
+#      routes:
+#        - id: order_route
+#          uri: lb://order-service
+#          predicates:
+#            - Path=/order/**

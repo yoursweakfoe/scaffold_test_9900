@@ -8,10 +8,16 @@ spring:
     password: postgres
     type: com.alibaba.druid.pool.DruidDataSource
     druid:
+      filters: stat,wall
+      web-stat-filter:
+        enabled: true
+        url-pattern: "/*"
+        exclusions: "*.js,*.gif,*.jpg,*.png,*.css,*.ico,/druid/*"
       driver-class-name: org.postgresql.Driver
       stat-view-servlet:
         enabled: true
         url-pattern: "/druid/*"
+        reset-enable: false
 
   application:
     name: order-service

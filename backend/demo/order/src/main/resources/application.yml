@@ -30,3 +30,12 @@ mybatis:
     map-underscore-to-camel-case: true
   type-aliases-package: unsw.comp9900.demo.order.entity
   mapper-locations: classpath:/mapper/*.xml
+
+seata:
+  application-id: ${spring.application.name}
+  tx-service-group: ${spring.application.name}-group
+  service:
+    vgroup-mapping:
+      order-service-group: default
+    grouplist:
+      default: 127.0.0.1:8091

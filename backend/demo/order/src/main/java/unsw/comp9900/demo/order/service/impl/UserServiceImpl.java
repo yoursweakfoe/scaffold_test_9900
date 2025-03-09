@@ -1,5 +1,6 @@
 package unsw.comp9900.demo.order.service.impl;
 
+import io.seata.spring.annotation.GlobalTransactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import unsw.comp9900.demo.order.entity.User;
@@ -13,6 +14,7 @@ public class UserServiceImpl implements UserService {
     UserMapper userMapper;
 
     @Override
+    // @GlobalTransactional add if distributed transcation
     public int addUser() {
         userMapper.insertUser();
         return 1;

@@ -8,7 +8,7 @@ spring:
     password: postgres
     type: com.alibaba.druid.pool.DruidDataSource
     druid:
-      filters: stat,wall
+      filters: stat # add ,wall if need sql firewall
       web-stat-filter:
         enabled: true
         url-pattern: "/*"

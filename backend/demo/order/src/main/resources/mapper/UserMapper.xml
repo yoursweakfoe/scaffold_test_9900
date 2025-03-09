@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper
-        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
-        "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="unsw.comp9900.demo.order.mapper.UserMapper">
-    <insert id="insertUser">
-        insert into "user"(id,name) values(1,'tester')
-    </insert>
+  <select id="selectallUsertest" resultType="unsw.comp9900.demo.order.entity.User">
+    select * from users
+  </select>
 </mapper>

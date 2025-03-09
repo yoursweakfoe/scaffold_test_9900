@@ -18,7 +18,6 @@ spring:
         enabled: true
         url-pattern: "/druid/*"
         reset-enable: false
-
   application:
     name: order-service
   cloud:

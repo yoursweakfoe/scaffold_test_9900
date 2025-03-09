@@ -1,9 +1,10 @@
 package unsw.comp9900.demo.order.mapper;
 
+import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import org.springframework.stereotype.Repository;
 import unsw.comp9900.demo.order.entity.User;
 
 @Repository
-public interface UserMapper {
+public interface UserMapper extends BaseMapper<User> {
     int insertUser();
 }

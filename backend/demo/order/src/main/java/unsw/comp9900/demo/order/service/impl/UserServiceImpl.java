@@ -8,7 +8,7 @@ import unsw.comp9900.demo.order.mapper.UserMapper;
 import unsw.comp9900.demo.order.service.UserService;
 
 @Service
-public class UserServiceImpl implements UserService {
+public class UserServiceImpl implements UserService{
 
     @Autowired
     UserMapper userMapper;

@@ -1,4 +1,4 @@
-package unsw.comp9900.demo.unsw.comp9900.demo.gateway;
+package unsw.comp9900.demo.gateway;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

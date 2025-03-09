@@ -8,6 +8,10 @@ spring:
       server-addr: 127.0.0.1:8848
       discovery:
         server-addr: 127.0.0.1:8848
+       # use docker profile below when packaging to docker
+#      server-addr: host.docker.internal:8848
+#      discovery:
+#        server-addr: host.docker.internal:8848
   config:
     import:
       - optional:nacos:gateway.yml

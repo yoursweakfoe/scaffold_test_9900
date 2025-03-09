@@ -73,7 +73,10 @@
             <version>4.2.0</version>
         </dependency>
 
-
+        <dependency>
+            <groupId>com.alibaba.cloud</groupId>
+            <artifactId>spring-cloud-starter-alibaba-nacos-config</artifactId>
+        </dependency>
 
 
     </dependencies>

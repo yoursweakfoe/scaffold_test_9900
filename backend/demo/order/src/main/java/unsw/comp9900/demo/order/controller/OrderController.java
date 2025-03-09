@@ -21,7 +21,8 @@ public class OrderController {
         System.out.println("added");
 //        String msg = restTemplate.getForObject("http://stock-service/stock/reduce", String.class);
         String msg = stockFeignService.reduce();
-        String msg2 = restTemplate.getForObject("http://python/stops", String.class);
-        return "added " + msg +" "+msg2;
+//        String msg2 = restTemplate.getForObject("http://python/stops", String.class);
+//        return "added " + msg +" "+msg2;
+        return "added " + msg;
     }
 }

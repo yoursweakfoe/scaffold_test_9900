@@ -6,7 +6,8 @@
 	<modules>
 		<module>order</module>
 		<module>stock</module>
-	</modules>
+        <module>gateway</module>
+    </modules>
 
 	<groupId>unsw.comp9900.demo</groupId>
 	<artifactId>demo</artifactId>

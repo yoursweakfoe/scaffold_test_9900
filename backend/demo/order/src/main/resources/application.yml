@@ -6,7 +6,7 @@ spring:
     url: jdbc:postgresql://localhost:5432/test_db
     username: postgres
     password: postgres
-
+    type: com.alibaba.druid.pool.DruidDataSource
     druid:
       driver-class-name: org.postgresql.Driver
       stat-view-servlet:

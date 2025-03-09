@@ -47,3 +47,11 @@ seata:
       order-service-group: default
     grouplist:
       default: 127.0.0.1:8091
+
+springdoc:
+  api-docs:
+    enabled: true
+    path: /v3/api-docs
+  swagger-ui:
+    enabled: true
+    path: /swagger-ui/index.html
